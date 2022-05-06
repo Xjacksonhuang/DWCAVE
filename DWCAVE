@@ -75,7 +75,6 @@ def main(args):
     results.loc['Performance gap', :] = results.iloc[0, :] - results.iloc[1, :]
     results.to_csv('results.csv')
 
-
 if __name__ == '__main__':
     assert pyro.__version__.startswith('1.8.1')
     # parse command line arguments
